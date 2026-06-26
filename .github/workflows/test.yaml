@@ -32,3 +32,9 @@ jobs:
         echo "${{ secrets.REGISTRY_PASSWORD }}" | docker login cr.anikeen.cloud \
           -u "${{ secrets.REGISTRY_USERNAME }}" \
           --password-stdin
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: cr.anikeen.cloud
+        username: k3s
+        password: ${{ secrets.REGISTRY_PASSWORD }}
