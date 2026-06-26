@@ -11,6 +11,19 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
+    - name: Debug registry from GitHub runner
+      run: |
+        echo "DNS:"
+        nslookup cr.anikeen.cloud || true
+    
+        echo "Curl normal:"
+        curl -v --connect-timeout 20 https://cr.anikeen.cloud/v2/ || true
+    
+        echo "Curl force HTTP/1.1:"
+        curl --http1.1 -v --connect-timeout 20 https://cr.anikeen.cloud/v2/ || true
+    
+        echo "TLS:"
+        openssl s_client -connect cr.anikeen.cloud:443 -servername cr.anikeen.cloud -brief < /dev/null || true
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v3
       with:
