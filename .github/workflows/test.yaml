@@ -24,3 +24,11 @@ jobs:
     
         echo "TLS:"
         openssl s_client -connect cr.anikeen.cloud:443 -servername cr.anikeen.cloud -brief < /dev/null || true
+    - name: Debug docker registry access
+      run: |
+        docker version
+        docker info
+    
+        echo "${{ secrets.REGISTRY_PASSWORD }}" | docker login cr.anikeen.cloud \
+          -u "${{ secrets.REGISTRY_USERNAME }}" \
+          --password-stdin
