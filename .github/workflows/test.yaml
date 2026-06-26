@@ -15,6 +15,9 @@ jobs:
       run: |
         echo "DNS:"
         nslookup cr.anikeen.cloud || true
+
+        echo "Curl normal:"
+        curl -v --connect-timeout 20 https://cr.anikeen.cloud/v2/ || true
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v3
       with:
