@@ -6,7 +6,7 @@
 <a href="https://github.com/froxlor/container"><img src="https://img.shields.io/github/license/froxlor/container" alt="License"></a>
 </p>
 
-# froxlor Container
+<h1 align="center">froxlor Container</h1>
 This is the froxlor container image for Docker, Kubernetes, and other container platforms.
 
 ## Quick Start
