@@ -1,7 +1,10 @@
 <p align="center"><a href="https://froxlor.org" target="_blank"><img src="https://raw.githubusercontent.com/froxlor/framework/refs/heads/main/packages/ui/resources/img/icon.png" width="80"></a></p>
 
 <p align="center">
+<a href="https://github.com/froxlor/container/actions"><img src="https://github.com/froxlor/container/actions/workflows/build-and-push.yml/badge.svg" alt="Build Status"></a>
 <a href="https://github.com/froxlor/framework/actions"><img src="https://github.com/froxlor/framework/actions/workflows/run-unit-tests.yml/badge.svg" alt="Build Status"></a>
+<a href="https://github.com/froxlor/container"><img src="https://img.shields.io/badge/container%20version-develop-orange" alt="Container Version"></a>
+<a href="https://github.com/froxlor/container"><img src="https://img.shields.io/badge/froxlor%20version-develop-orange" alt="froxlor Version"></a>
 <a href="https://github.com/froxlor/container"><img src="https://img.shields.io/badge/status-in%20development-orange" alt="Status"></a>
 <a href="https://github.com/froxlor/container"><img src="https://img.shields.io/github/license/froxlor/container" alt="License"></a>
 </p>
