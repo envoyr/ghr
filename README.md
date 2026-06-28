@@ -1,13 +1,13 @@
 <p align="center"><a href="https://froxlor.org" target="_blank"><img src="https://raw.githubusercontent.com/froxlor/framework/refs/heads/main/packages/ui/resources/img/icon.png" width="80"></a></p>
 
-<h1 align="center">froxlor Container</h1>
-<p align="center">This is the froxlor container image for Docker, Kubernetes, and other container platforms.</p>
-
 <p align="center">
 <a href="https://github.com/froxlor/framework/actions"><img src="https://github.com/froxlor/framework/actions/workflows/run-unit-tests.yml/badge.svg" alt="Build Status"></a>
 <a href="https://github.com/froxlor/container"><img src="https://img.shields.io/badge/status-in%20development-orange" alt="Status"></a>
 <a href="https://github.com/froxlor/container"><img src="https://img.shields.io/github/license/froxlor/container" alt="License"></a>
 </p>
+
+# froxlor Container
+This is the froxlor container image for Docker, Kubernetes, and other container platforms.
 
 ## Quick Start
 
